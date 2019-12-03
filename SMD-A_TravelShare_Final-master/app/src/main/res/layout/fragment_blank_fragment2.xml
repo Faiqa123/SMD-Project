@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/myRV2"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/plus_button"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/plus_button"
+        android:padding="5dp"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="450dp"/>
+
+
+</FrameLayout>

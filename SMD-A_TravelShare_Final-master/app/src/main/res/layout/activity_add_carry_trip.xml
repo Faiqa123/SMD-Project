@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddCarryTrip">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="90dp"
+        android:text="ADDING NEW TRIP"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="19dp"
+        android:text="Source"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source_loc"
+        android:padding="10dp"
+        android:background="@color/pureWhite"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="19dp"
+        android:text="Destination"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destination_loc"
+        android:padding="10dp"
+        android:background="@color/pureWhite"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="19dp"
+        android:text="Date"
+        android:textSize="18dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/pureWhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+        android:textColor="@color/colorBlue"
+        android:textColorHint="@color/colorBlue"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="YYYY-MM-DD"
+            android:inputType="text"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="19dp"
+        android:text="Time"
+        android:textSize="18dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/pureWhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+        android:textColor="@color/colorBlue"
+        android:textColorHint="@color/colorBlue"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="HH:MM:SS"
+            android:inputType="text"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <Button
+            android:id="@+id/add_trip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_rounded"
+            android:text="SAVE"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

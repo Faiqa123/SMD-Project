@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/blank_pic" />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+    <TextView
+        android:id="@+id/Pname"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center|left"
+        android:textSize="20dp"
+        android:text="Ahmed"/>
+
+    <TextView
+        android:id="@+id/Ppath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lahore->Karachi"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/nunito_black"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/pnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03004321256"
+        android:textSize="20dp"
+        android:gravity="center|left"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"/>
+
+
+</LinearLayout>
+</LinearLayout>
